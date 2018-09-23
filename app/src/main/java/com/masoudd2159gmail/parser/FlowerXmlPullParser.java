@@ -31,7 +31,7 @@ public class FlowerXmlPullParser {
             factory.setNamespaceAware(true);
 
             XmlPullParser parser = factory.newPullParser();
-            InputStream inputStream = context.getResources().openRawResource(R.raw.flowers);
+            InputStream inputStream = context.getResources().openRawResource(R.raw.flowers_xml);
 
             parser.setInput(inputStream, null);
 

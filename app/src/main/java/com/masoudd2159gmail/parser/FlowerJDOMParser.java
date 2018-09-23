@@ -25,7 +25,7 @@ public class FlowerJDOMParser {
 
     public ArrayList<Flower> parseXML(Context context) {
         ArrayList<Flower> flowers = new ArrayList<Flower>();
-        InputStream inputStream = context.getResources().openRawResource(R.raw.flowers);
+        InputStream inputStream = context.getResources().openRawResource(R.raw.flowers_xml);
 
         SAXBuilder builder = new SAXBuilder();
 
