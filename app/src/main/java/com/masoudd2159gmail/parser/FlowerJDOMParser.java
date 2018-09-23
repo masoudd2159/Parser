@@ -10,6 +10,7 @@ import org.jdom2.input.SAXBuilder;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.List;
 
 public class FlowerJDOMParser {
 
@@ -31,7 +32,7 @@ public class FlowerJDOMParser {
         try {
             Document document = (Document) builder.build(inputStream);
             Element rootNode = document.getRootElement();
-            ArrayList<Element> nodes = (ArrayList<Element>) rootNode.getChildren(FLOWER_TAG);
+            List<Element> nodes = rootNode.getChildren(FLOWER_TAG);
 
             for (Element node : nodes) {
                 Flower object = new Flower();
